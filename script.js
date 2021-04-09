@@ -7,7 +7,7 @@ const image = document.createElement('img');
         
 
 h1.innerHTML = 'Welcome! This text is coming from JavaScript'
-h2.innerHTML = 'Click the button below and you will see my favorite image'
+h2.innerHTML = 'Click the button below and you will see my favorite image after 3 seconds'
 btn1.innerHTML = 'Click me'
 btn2.innerHTML = 'Delete image';
 
@@ -18,9 +18,11 @@ mainContainer.append(h1, h2, btn1);
 
 
 btn1.addEventListener('click', () => {
-    mainContainer.append(image, btn2);
-    btn1.remove()   
-})
+    setTimeout(function () {
+        mainContainer.append(image, btn2);
+        btn1.remove()
+    }, 3000)
+});
 
 
 btn2.addEventListener('click', () => {
