@@ -1,3 +1,8 @@
+body {
+    background-color: #457b9d;
+    transition: background-color 1000ms linear;
+}
+
 div {
     display: flex;
     align-items: center;
@@ -6,7 +11,7 @@ div {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-button {
+/* button {
     margin: 10px;
     background-color: rgb(179, 100, 27);
     padding: 10px;
@@ -22,6 +27,6 @@ button:hover {
     cursor: pointer;
     background-color: rgb(110, 54, 2);
     border-color:  rgb(110, 54, 2);
-}
+} */
 
 
