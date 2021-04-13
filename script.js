@@ -17,6 +17,11 @@ h2Time.innerHTML = 'The current date and time is:'
 document.body.append(mainContainer);
 mainContainer.append(h1, h2, btn1);
 
+mainContainer.classList.add('mainContainer');
+btn1.classList.add('btn');
+btn2.classList.add('btn');
+date.classList.add('paragraph');
+
 btn1.addEventListener('click', () => {
     h1.remove()
     btn1.remove()

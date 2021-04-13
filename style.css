@@ -1,9 +1,9 @@
 body {
     background-color: #f8edeb;
-    transition: background-color 1000ms linear;
+    /* transition: background-color 1000ms linear; */
 }
 
-div {
+.mainContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,7 @@ div {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-button {
+.btn {
     margin: 10px;
     background-color: rgb(179, 100, 27);
     padding: 10px;
@@ -23,13 +23,13 @@ button {
     text-transform: uppercase;
 }
 
-button:hover {
+.btn:hover {
     cursor: pointer;
     background-color: rgb(110, 54, 2);
     border-color:  rgb(110, 54, 2);
 }
 
-p {
+.paragraph {
     font-size: 20px;
 }
 
