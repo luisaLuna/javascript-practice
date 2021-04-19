@@ -1,4 +1,4 @@
-const mainContainer = document.createElement('div');
+const mainContainer = document.getElementById('main-container');
 const secondContainer = document.createElement('div');
 const buttonsContainer = document.createElement('div');
 const h1 = document.createElement('h1');
@@ -20,18 +20,17 @@ btn2.innerHTML = 'Click me'
 document.body.append(mainContainer, buttonsContainer, secondContainer);
 mainContainer.append(h1, h2, btn1);
 
-mainContainer.classList.add('mainContainer');
-secondContainer.classList.add('mainContainer');
-buttonsContainer.classList.add('buttonsContainer');
-btn1.classList.add('btn');
-btn2.classList.add('btn2');
-
+mainContainer.setAttribute('id', 'mainContainer');
+secondContainer.setAttribute('id', 'mainContainer');
+buttonsContainer.setAttribute('id', 'buttonsContainer');
+btn1.setAttribute('id', 'btn');
+btn2.setAttribute('id', 'btn2');
 
 btn1.addEventListener('click', () => {
     for (let i = 0; i < 11; i++) {
         let button = document.createElement('button');
         button.innerText =`Button ${i+1}` ;
-        button.classList.add('buttons');
+        button.setAttribute('id', 'buttons');
         buttonsContainer.append(button);
         secondContainer.append( p, btn2);
     }
