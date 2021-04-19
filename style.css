@@ -1,24 +1,8 @@
-html {
-    transition: background-color 0.5s ease-in;
-}
-
-html.dark {
-    background-color: #111;
-    color: #fff;
-}
-
 #mainContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#buttonsContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #btn {
@@ -39,34 +23,13 @@ html.dark {
     border: 2px solid rgba(0, 0, 0, 0.9);
 }
 
-#btn2 {
-    margin: 10px;
-    background-color: #fff;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: 2px solid #fff;
-    color: #000;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-#btn2:hover {
-    cursor: pointer;
-    background-color: rgba(102, 100, 100, 0.9);
-    border: 2px solid rgba(102, 100, 100, 0.9);
-}
-
 
 #buttons {
     margin: 10px;
     background-color: rgb(197, 42, 176);
     padding: 10px;
-    font-size: 20px;
-    border-radius: 8px;
     border: 2px solid rgb(197, 42, 176);
     color: #fff;
-    letter-spacing: 1px;
 }
 
 #buttons:hover {

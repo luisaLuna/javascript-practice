@@ -22,9 +22,9 @@ mainContainer.append(h1, h2, btn1);
 
 mainContainer.setAttribute('id', 'mainContainer');
 secondContainer.setAttribute('id', 'mainContainer');
-buttonsContainer.setAttribute('id', 'buttonsContainer');
+buttonsContainer.setAttribute('id', 'mainContainer');
 btn1.setAttribute('id', 'btn');
-btn2.setAttribute('id', 'btn2');
+btn2.setAttribute('id', 'btn');
 
 btn1.addEventListener('click', () => {
     for (let i = 0; i < 11; i++) {
