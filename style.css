@@ -1,44 +1,53 @@
-#mainContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+* {
+  box-sizing: border-box;
 }
 
-#btn {
-    margin: 10px;
-    background-color: #000;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: 2px solid #000;
-    color: #fff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#btn:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 2px solid rgba(0, 0, 0, 0.9);
+.container {
+  border: 3px #000 solid;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
 }
 
-
-#buttons {
-    margin: 10px;
-    background-color: rgb(197, 42, 176);
-    padding: 10px;
-    border: 2px solid rgb(197, 42, 176);
-    color: #fff;
+.code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 
-#buttons:hover {
-    cursor: pointer;
-    background-color: rgba(102, 100, 100, 0.9);
-    border: 2px solid rgba(102, 100, 100, 0.9);
+.code {
+  border-radius: 5px;
+  font-size: 75px;
+  height: 120px;
+  width: 100px;
+  border: 1px solid #eee;
+  margin: 1%;
+  text-align: center;
+  -moz-appearance: textfield; /* This code is to get rid of the arrows in the input */
 }
 
-p {
-    font-size: 25px;
+/* This code is to get rid of the arrows in the input */
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
+.code:valid {
+  border-color: #3498db;
+}
+
+.code.two {
+    border-right: 5px solid rgba(0, 0, 0, 0.6);
+}
+
+.code.four {
+     border-right: 5px solid rgba(0, 0, 0, 0.6);
+}
