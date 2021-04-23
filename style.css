@@ -1,53 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container {
-  border: 3px #000 solid;
-  border-radius: 10px;
-  padding: 30px;
-  text-align: center;
-}
-
-.code-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-}
-
-.code {
-  border-radius: 5px;
-  font-size: 75px;
-  height: 120px;
-  width: 100px;
-  border: 1px solid #eee;
-  margin: 1%;
-  text-align: center;
-  -moz-appearance: textfield; /* This code is to get rid of the arrows in the input */
-}
-
-/* This code is to get rid of the arrows in the input */
-.code::-webkit-outer-spin-button,
-.code::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.code:valid {
-  border-color: #3498db;
-}
-
-.code.two {
-    border-right: 5px solid rgba(0, 0, 0, 0.6);
-}
-
-.code.four {
-     border-right: 5px solid rgba(0, 0, 0, 0.6);
+button {
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px;
 }
