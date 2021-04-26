@@ -1,11 +1,28 @@
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 button {
   padding: 10px;
   font-size: 20px;
-  margin: 20px;
+  background-color: orangered;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  color: aliceblue;
+}
+
+h1 {
+font-size: 40px;
+}
+
+p {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 32px;
 }

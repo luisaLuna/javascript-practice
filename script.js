@@ -1,26 +1,27 @@
 const container = document.querySelector('.container');
 const h1 = document.createElement('h1');
+const textProducts = document.createElement('p');
+const text = document.createElement('p');
+const h2 = document.createElement('h2');
 const button = document.createElement('button');
-const buttonExtra = document.createElement('button');
-const image = document.createElement('img');
+const textFinalPrice = document.createElement('p');
+const products = ["orange", "apple", "water"];
+const prices = ["6", "7", "8"];
 
-h1.innerHTML = 'Hola! Esto es sólo una práctica';
-button.innerHTML = 'Click aquí';
-buttonExtra.innerHTML = 'Regresar';
-image.src = 'https://images.unsplash.com/photo-1585507252242-11fe632c26e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80';
+h1.innerHTML = 'Welcome! We have discounts!';
+textProducts.innerHTML = `The products that we have are:<br></br> ${products[0]} ${prices[0]}USD, ${products[1]} ${prices[1]}USD, and ${products[2]} ${prices[2]}USD.`;
+text.innerHTML = 'We have 12% of discount!';
+h2.innerHTML = 'Click the button below to calculate prices with discount!';
+button.innerHTML = 'Click me';
 
-
-container.append(h1, button);
+container.append(h1, textProducts, text, h2, button);
 
 button.addEventListener('click', () => {
-    container.append(image, buttonExtra);
-    button.remove()
-    h1.innerHTML = 'Esta mi imagen favorita:';
-})
+    let finalPrice = prices.map(function (price) {
+        let discounts = price * 0.12;
+        return price - discounts;
+    })
 
-buttonExtra.addEventListener('click', () => {
-    container.append(button);
-    h1.innerHTML = 'Hola! Esto es sólo una práctica';
-    image.remove()
-    buttonExtra.remove()
+    textFinalPrice.innerHTML = `The prices with discount are: <br></br> ${products[0]}: ${finalPrice[0]}USD,<br></br> ${products[1]}: ${finalPrice[1]}USD, <br></br> ${products[2]}: ${finalPrice[2]}USD.`;
+    container.append(textFinalPrice);
 })
