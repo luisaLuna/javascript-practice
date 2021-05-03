@@ -6,6 +6,7 @@ const h2 = document.createElement('h2');
 const button = document.createElement('button');
 const textResult = document.createElement('p');
 const products = ["Car", "TV", "Cell Phone"];
+const productDiscount = "TV";
 const prices = ["10000", "3000", "2000"];
 
 
@@ -18,10 +19,6 @@ button.innerHTML = 'Click me';
 container.append(h1, textProducts, text, h2, button);
 
 button.addEventListener('click', () => {
-   
-    products.length = 1;
-    const result = products.filter(product => product.length > 1);
-
-    textResult.innerHTML = `The only product with discount is the ${result}!`;
+    textResult.innerHTML = `The product "${productDiscount}" ${products.includes(productDiscount) ? 'is' : 'is not'} with disccount!`;
     container.append(textResult);
 })
