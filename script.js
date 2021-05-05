@@ -18,6 +18,14 @@ button.innerHTML = 'Click me';
 
 container.append(h1, textProducts, text, h2, button);
 
+button.classList.add('btn');
+
+container.style.fontFamily = 'Courier New';
+button.style.fontSize = '20px';
+button.style.padding = '10px';
+button.style.backgroundColor = '#2b29a3';
+button.style.color = '#fff';
+
 button.addEventListener('click', () => {
     textResult.innerHTML = `The product "${productDiscount}" ${products.includes(productDiscount) ? 'is' : 'is not'} with disccount!`;
     container.append(textResult);
